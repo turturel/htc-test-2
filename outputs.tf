@@ -15,3 +15,8 @@ output "instance_subnet" {
    description = "AMI used to create the EC2 instance."
    value       = aws_instance.app_server.ami
  }
+
+ output "instance_ipv4" {
+   description = "Instance private IPv4 address."
+   value       = aws_instance.app_server.private_ip
+ }
